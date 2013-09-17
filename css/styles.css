@@ -1,0 +1,79 @@
+.box {
+	height: 200px;
+	width: 700px;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+.flyoutPanel {
+	position: absolute;	
+	top: 0;
+	left: 915px;
+	width: 400px;
+	height: 200px;	
+	margin-left: -200px;
+    z-index: 100;
+;
+	/* float: right; */
+}
+.flyoutContent {
+	float:left; 
+	width: 350px;
+	background: red;
+	height: 200px;
+    display: none;
+
+
+}
+.flyoutButton {
+	float: left;
+	width: 50px;
+	background: black;
+	height: 200px;
+
+}
+
+.selected .close-button {
+
+	display: block;
+
+}
+
+.close-button {
+
+	position: absolute;
+	bottom: 0;
+	right: 5px;
+	top: 5px;
+	font-size:25px;
+	display: block;
+	z-index: 100;
+}
+
+/*@media screen 
+and (min-width : 768px) 
+and (max-width : 1024px)*/ 
+
+@media screen
+and (max-width : 768px) {
+    
+    .flyoutContent {
+        float:left; 
+    }
+    .flyoutButton {
+        float: right;
+    }    
+    .flyoutPanel {        
+        float: right;
+        left: 565px;        
+    }
+    .close-button {
+        right: 55px;
+        top: 5px;
+    }    
+}
+
+
+/* add start */
+
+/* add end */
